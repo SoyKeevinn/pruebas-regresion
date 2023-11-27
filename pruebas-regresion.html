@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas de Regresión</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- <script href="funciones.js"></script> -->
+</head>
+
+<body>
+    <!-- <div class="content-pather">
+        <div class="content-aside">
+            aside
+        </div>
+        <div class="content-main">
+            main
+        </div>
+    </div> -->
+    <header>
+        <h1>Blog de Pruebas de Regresión</h1>
+    </header>
+    <main>
+        <article>
+            <div style="margin-top: 20px" >
+                <h2>¿Qué son las Pruebas de Regresión?</h2>
+                <p>Las pruebas de regresión son cualquier tipo de pruebas de software con el objeto de descubrir errores
+                    (bugs), carencias de funcionalidad, o divergencias funcionales con respecto al comportamiento
+                    esperado del software, causados por la realización de un cambio en el programa. Se evalúa el
+                    correcto funcionamiento del software desarrollado frente a evoluciones o cambios funcionales. El
+                    propósito de éstas es asegurar que los casos de prueba que ya habían sido probados y fueron exitosos
+                    permanezcan así. Se recomienda que este tipo de pruebas sean automatizadas para reducir el tiempo y
+                    esfuerzo en su ejecución.
+                </p>
+                <br>
+                <p>
+                    Las pruebas de regresión se pueden considerar como el subconjunto de pruebas planificadas que se
+                    seleccionan para ser ejecutadas , generalmente de forma automática y periódicamente en cada nueva
+                    liberación del producto/software , teniendo como objetivo la verificación de que el producto no haya
+                    sufrido regresiones.
+                </p>
+                <br>
+                <p>
+                    Existen herramientas de software que permiten detectar este tipo de errores de manera parcial o
+                    totalmente automatizada, la práctica habitual en programación extrema es que este tipo de pruebas se
+                    ejecuten en cada uno de los pasos del ciclo de vida del desarrollo del software.
+                </p>
+            </div>
+            <div style="margin-top: 20px" >
+                <h2>Objetivo</h2>
+                <p>El objetivo fundamental de las pruebas de regresión es asegurar que los cambios introducidos en el
+                    software no afecten negativamente las funcionalidades existentes. Estas pruebas son esenciales en
+                    entornos de desarrollo continuo, donde los equipos realizan cambios frecuentes en el código para
+                    agregar
+                    nuevas características, corregir errores o realizar mejoras.</p>
+                <div class="desplegable">
+                    <section class="accordion">
+                        <div class="tab">
+                            <input type="checkbox" name="accordion-1" id="cb1" checked>
+                            <label for="cb1" class="tab__label">Garantizar la Estabilidad</label>
+                            <div class="tab__content">
+                                <p>La principal meta es mantener la estabilidad del software. Cuando se realizan cambios
+                                    en el código, ya sea agregando nuevas funcionalidades o corrigiendo errores, existe
+                                    el riesgo de introducir nuevos problemas o regresiones que pueden afectar
+                                    negativamente las partes existentes del sistema.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="accordion-1" id="cb2">
+                            <label for="cb2" class="tab__label">Detectar Regresiones</label>
+                            <div class="tab__content">
+                                <p>Las regresiones son cambios no intencionales en el comportamiento del software.
+                                    Pueden surgir como resultado de nuevas implementaciones que tienen impactos no
+                                    deseados en áreas previamente funcionales. Las pruebas de regresión buscan detectar
+                                    estas regresiones antes de que lleguen a producción.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="accordion-1" id="cb3">
+                            <label for="cb3" class="tab__label">Validar la Integridad del Código</label>
+                            <div class="tab__content">
+                                <p>Las pruebas de regresión validan que el código existente sigue siendo coherente y
+                                    compatible con las nuevas adiciones o modificaciones. Esto asegura que la aplicación
+                                    funcione como se espera y que las nuevas funcionalidades no interfieran con las
+                                    existentes.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="accordion-1" id="cb4">
+                            <label for="cb4" class="tab__label">Facilitar el Desarrollo Continuo</label>
+                            <div class="tab__content">
+                                <p>En entornos de desarrollo ágil o continuo, donde los cambios se implementan
+                                    regularmente, las pruebas de regresión son esenciales para permitir una entrega
+                                    continua y para mantener la confianza en la calidad del software a medida que
+                                    evoluciona.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="accordion-1" id="cb5">
+                            <label for="cb5" class="tab__label">Reducir Riesgos en Implementaciones</label>
+                            <div class="tab__content">
+                                <p>Antes de desplegar una nueva versión o realizar una actualización, las pruebas de
+                                    regresión ayudan a reducir los riesgos asociados al cambio al proporcionar una
+                                    validación automática de que las funcionalidades existentes siguen siendo válidas.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="accordion-1" id="cb6">
+                            <label for="cb6" class="tab__label">Asegurar la Experiencia del Usuario</label>
+                            <div class="tab__content">
+                                <p>Al evitar la introducción de errores no detectados en áreas críticas de la
+                                    aplicación, las pruebas de regresión contribuyen a garantizar una experiencia del
+                                    usuario consistente y libre de problemas</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px" >
+                <h2>Cuándo Realizar Pruebas de Regresión</h2>
+                <p>Las pruebas de regresión deben realizarse en momentos específicos durante el ciclo de vida del
+                    desarrollo de software para garantizar que los cambios recientes no hayan introducido regresiones en
+                    el código existente.</p>
+                <div class="cartas">
+
+                    <div class="wrapper">
+                        <!-- <h1>Parallax Flipping Cards</h1> -->
+                        <div class="cols">
+                            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                <div class="container">
+                                    <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+                                        <div class="inner">
+                                            <p>Después de Cada Cambio en el Código</p>
+                                            <!-- <span>Lorem ipsum</span> -->
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="inner">
+                                            <p>Esto ayuda a detectar cualquier regresión de inmediato y facilita la
+                                                corrección temprana de problemas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" ontouchstart="this.classList.toggle('hover');">
+                                <div class="container">
+                                    <div class="front" ">
+                                              <div class=" inner">
+                                        <p>Antes de la Integración Continua</p>
+                                        <!-- <span>Lorem ipsum</span> -->
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p> Esto asegura que los cambios propuestos no rompan la funcionalidad existente
+                                            antes de ser incorporados al código base.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/502/502/)">
+                                    <div class="inner">
+                                        <p>Antes de Cada Despliegue a Producción</p>
+                                        <!-- <span>Lorem ipsum</span> -->
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Esto garantiza que la versión que se está implementando no tenga impactos
+                                            negativos en la estabilidad y funcionalidad del sistema en producción.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/503/503/)">
+                                    <div class="inner">
+                                        <p>Después de Fusionar Ramas de Desarrollo</p>
+                                        <!-- <span>Lorem ipsum</span> -->
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Esto ayuda a identificar posibles conflictos y asegura que la versión
+                                            combinada funcione correctamente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/505/505/)">
+                                    <div class="inner">
+                                        <p>Como Parte de la Estrategia de Pruebas Continua</p>
+                                        <!-- <span>Lorem ipsum</span> -->
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Puedes establecer programaciones regulares para ejecutar pruebas
+                                            automáticamente o vincularlas a eventos específicos en tu flujo de trabajo
+                                            de desarrollo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+                                    <div class="inner">
+                                        <p>Cuando Cambian los Requisitos</p>
+                                        <!-- <span>Lorem ipsum</span> -->
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Si hay cambios en los requisitos del software es necesario ejecutar
+                                            pruebas de regresión para garantizar que el software siga cumpliendo con
+                                            esos requisitos modificados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+                                    <div class="inner">
+                                        <p>Después de Actualizaciones en Dependencias Externas</p>
+                                        <!-- <span>Lorem ipsum</span> -->
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Si tu aplicación depende de bibliotecas externas u otros componentes, realiza
+                                            pruebas de regresión después de actualizar estas dependencias. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div>
+                <h2>Beneficios de las Pruebas de Regresión</h2>
+                <div class="desplegable">
+                    <section class="accordion">
+                        <div class="tab">
+                            <input type="checkbox" name="accordion-1" id="cbo1" checked>
+                            <label for="cbo1" class="tab__label">Detección Temprana de Problemas</label>
+                            <div class="tab__content">
+                                <p>Las pruebas de regresión permiten identificar y corregir problemas de manera temprana
+                                    en el ciclo de desarrollo. Esto significa que los errores y las regresiones se
+                                    detectan antes de llegar a la fase de producción, lo que reduce significativamente
+                                    el tiempo y los costos asociados con la resolución de problemas más adelante en el
+                                    proceso.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="accordion-1" id="cbo2">
+                            <label for="cbo2" class="tab__label">Mantenimiento de la Confianza</label>
+                            <div class="tab__content">
+                                <p>Al realizar pruebas de regresión de manera regular, se mantiene la confianza en la
+                                    estabilidad del software. Los desarrolladores y los equipos de calidad pueden estar
+                                    seguros de que las nuevas modificaciones no han afectado negativamente las
+                                    funcionalidades existentes, lo que contribuye a la confiabilidad general del
+                                    sistema.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="accordion-1" id="cbo3">
+                            <label for="cbo3" class="tab__label"> Eficiencia en el Desarrollo</label>
+                            <div class="tab__content">
+                                <p>La eficiencia en el desarrollo se mejora al proporcionar retroalimentación rápida
+                                    sobre la integridad del código. Las pruebas de regresión automatizadas, en
+                                    particular, permiten una validación rápida después de cada cambio, lo que facilita
+                                    la identificación y corrección de problemas de inmediato.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="accordion-1" id="cbo4">
+                            <label for="cbo4" class="tab__label"> Reducir Riesgos en Implementaciones</label>
+                            <div class="tab__content">
+                                <p>La ejecución de pruebas de regresión antes de implementar una nueva versión del
+                                    software ayuda a reducir los riesgos asociados con el cambio. Asegura que las nuevas
+                                    funcionalidades se integren correctamente y que no haya impactos negativos en la
+                                    estabilidad del sistema en producción.</p>
+                            </div>
+                        </div>
+
+
+                    </section>
+                </div>
+            </div> -->
+
+            <div style="margin-top: 20px">
+                <h2>Conclusión</h2>
+                <p>
+                    En el entorno dinámico del desarrollo de software, donde las actualizaciones y cambios son
+                    constantes, las pruebas de regresión emergen como un componente crítico para garantizar la calidad,
+                    estabilidad y eficiencia en todo el ciclo de vida del software.
+                </p>
+                <p>
+                    En resumen, las pruebas de regresión son esenciales para la creación de software robusto y
+                    confiable. Al abordar la detección temprana de problemas, mantener la coherencia en el código y
+                    ofrecer una experiencia del usuario sin interrupciones, las pruebas de regresión se posicionan como
+                    un pilar indispensable en la búsqueda de la excelencia en el desarrollo de software.
+                </p>
+            </div>
+
+
+
+
+
+
+
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 Blog de Pruebas de Regresión</p>
+    </footer>
+</body>
+
+</html>
